@@ -30,9 +30,9 @@
 // $include-print-styles: true;
 // $include-html-global-classes: $include-html-classes;
 
-// Grid
+// Grid 
 
-// $include-html-grid-classes: $include-html-classes;
+// $include-html-block-grid-classes: $include-html-classes; 
 // $include-xl-html-grid-classes: false;
 
 // $row-width: rem-calc(1000);
@@ -40,9 +40,13 @@
 
 // Global
 
+// We use these to define default font weights
+// $font-weight-normal: normal !default
+// $font-weight-bold: bold !default
+
 // We use these to control various global styles
 // $body-bg: #fff;
-// $body-font-color: black;
+// $body-font-color: #222;
 // $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -136,6 +140,14 @@
 // $h4-font-size: rem-calc(23);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
+
+// We use these to control header size reduction on small screens
+// $h1-font-reduction: rem-calc(10) !default;
+// $h2-font-reduction: rem-calc(10) !default;
+// $h3-font-reduction: rem-calc(5) !default;
+// $h4-font-reduction: rem-calc(5) !default;
+// $h5-font-reduction: 0 !default;
+// $h6-font-reduction: 0 !default;
 
 // These control how subheaders are styled.
 // $subheader-line-height: 1.4;
@@ -670,6 +682,7 @@
 
 // $tabbar-bg: #333;
 // $tabbar-height: rem-calc(45);
+// $tabbar-icon-width: $tabbar-height;
 // $tabbar-line-height: $tabbar-height;
 // $tabbar-color: #fff;
 // $tabbar-middle-padding: 0 rem-calc(10);
@@ -708,14 +721,13 @@
 // $tabbar-menu-icon-text-indent: rem-calc(35);
 // $tabbar-menu-icon-width: $tabbar-height;
 // $tabbar-menu-icon-height: $tabbar-height;
-// $tabbar-menu-icon-line-height: rem-calc(33);
 // $tabbar-menu-icon-padding: 0;
 
 // $tabbar-hamburger-icon-width: rem-calc(16);
 // $tabbar-hamburger-icon-left: false;
 // $tabbar-hamburger-icon-top: false;
-// $tapbar-hamburger-icon-thickness: 1px;
-// $tapbar-hamburger-icon-gap: 6px;
+// $tabbar-hamburger-icon-thickness: 1px;
+// $tabbar-hamburger-icon-gap: 6px;
 
 // Off Canvas Back-Link Overlay
 // $off-canvas-overlay-transition: background 300ms ease;
@@ -759,10 +771,6 @@
 // $orbit-slide-number-bg: rgba(0,0,0,0);
 // $orbit-slide-number-font-color: #fff;
 // $orbit-slide-number-padding: rem-calc(5);
-
-// We use these to controls the css animation
-// $orbit-animation-speed: 500ms;
-// $orbit-animation-ease: ease-in-out;
 
 // Hide controls on small
 // $orbit-nav-hide-for-small: true;
@@ -1078,16 +1086,15 @@
 
 // Tables
 
-//$include-html-table-classes: $include-html-classes;
+// $include-html-table-classes: $include-html-classes;
 
 // These control the background color for the table and even rows
-
-//$table-bg: #00c;
-//$table-even-row-bg: #1a6;
+// $table-bg: #fff;
+// $table-even-row-bg: #f9f9f9  ;
 
 // These control the table cell border style
 // $table-border-style: solid;
-// $table-border-size: 2px;
+// $table-border-size: 1px;
 // $table-border-color: #ddd;
 
 // These control the table head styles
@@ -1170,6 +1177,7 @@
 // $tooltip-radius: $global-radius;
 // $tooltip-rounded: $global-rounded;
 // $tooltip-pip-size: 5px;
+// $tooltip-max-width: 300px;
 
 //
 // TOP BAR
@@ -1178,7 +1186,7 @@
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-// $topbar-bg-color: #f00;
+// $topbar-bg-color: #333;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1207,7 +1215,7 @@
 // $topbar-link-font-size: rem-calc(13);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
-// $topbar-link-bg-color-hover: #272727;
+// $topbar-link-bg-color-hover: #555555;
 // $topbar-link-bg-hover: #272727;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);

@@ -17,3 +17,4 @@
 
 /config/initializers/sunlight.rb
 /config/initializers/influence_explorer.rb
+app/assets/.DS_Store
